@@ -6,26 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Vagas TI</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cor: {
+                            um: '#667085',
+                            dois: '#101828',
+                            tres: '#8E2424',
+                            quatro: '#ffffff'
+                        },
+                    },
+                    fontFamily: {
+                        fonte: ['inter', 'sans-serif'],
+                    },
+
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <header class="cabecalho">
-        <div class="cabecalho__Nav">
-            <img src="./img/logo.svg" alt="logo-empresa">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Produtos</a>
-                <a href="#">Recursos</a>
-                <a href="#">Sobre nós</a>
-            </nav>
-        </div>
-        <div class="cabecalho__login">
-            <a class="cabecalho__login__entrar" href="#">Entrar</a>
-            <a class="cabecalho__login__cadastrar" href="#">Cadastrar</a>
-        </div>
+<body class="font-fonte text-base bg-cor-quatro">
+    <header class="flex flex-col items-center">
+        <nav class="flex justify-between h-20 w-5/6">
+            <div class="flex items-center">
+                <img class="h-7 mr-28" src="./img/logo.svg" alt="logo-empresa">
+                <div class="">
+                    <a class="text-cor-um font-medium px-4" href="#">Home</a>
+                    <a class="text-cor-um font-medium px-4" href="#">Produtos</a>
+                    <a class="text-cor-um font-medium px-4" href="#">Recursos</a>
+                    <a class="text-cor-um font-medium px-4" href="#">Sobre nós</a>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <a class="text-cor-um font-fonte font-medium py-2.5 px-4" href="#">Entrar</a>
+                <a class="text-cor-quatro font-fonte font-medium py-2.5 px-4 bg-cor-tres rounded-lg"
+                    href="#">Cadastrar</a>
+            </div>
+        </nav>
+
+        <section class="flex flex-col gap-y-6 items-center w-2/3 py-24">
+            <h2 class="text-cor-tres font-semibold">Sobre nós</h2>
+            <h1 class="font-semibold text-5xl text-cor-dois">Por que somos diferentes?</h1>
+            <p class="text-center font-normal text-xl text-cor-um">
+                Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se
+                concentrarem
+                naquilo que é realmente importante para elas.
+            </p>
+        </section>
     </header>
+
+    <main class="flex flex-col items-center">
+        <section class="flex gap-x-8 justify-center mb-24 w-5/6">
+            <div class="w-72">
+                <h2 class="text-6xl font-semibold text-cor-tres">400+</h2>
+                <h3 class="text-cor-dois text-lg font-medium">Projetos concluídos</h3>
+                <p class="text-cor-um font-normal">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+            </div class="w-72">
+            <div class="w-72">
+                <h2 class="text-6xl font-semibold text-cor-tres">100+</h2>
+                <h3 class="text-cor-dois text-lg font-medium">Colaboradores</h3>
+                <p class="text-cor-um font-normal">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+            </div>
+            <div class="w-72">
+                <h2 class="text-6xl font-semibold text-cor-tres">20k</h2>
+                <h3 class="text-cor-dois text-lg font-medium">Downloads</h3>
+                <p class="text-cor-um font-normal">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+            </div>
+            <div class="w-72">
+                <h2 class="text-6xl font-semibold text-cor-tres">500+</h2>
+                <h3 class="text-cor-dois text-lg font-medium">Reviews 5 estrelas</h3>
+                <p class="text-cor-um font-normal">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
