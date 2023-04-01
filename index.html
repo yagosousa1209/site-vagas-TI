@@ -21,7 +21,9 @@
                             um: '#667085',
                             dois: '#101828',
                             tres: '#8E2424',
-                            quatro: '#ffffff'
+                            quatro: '#ffffff',
+                            hover_1:  '#7A1A22',
+                            hover_2: '#4A5672',
                         },
                     },
                     fontFamily: {
@@ -40,15 +42,15 @@
             <div class="flex items-center">
                 <img class="h-7 mr-28" src="./img/logo.svg" alt="logo-empresa">
                 <div class="">
-                    <a class="text-cor-um font-medium px-4" href="#">Home</a>
-                    <a class="text-cor-um font-medium px-4" href="#">Produtos</a>
-                    <a class="text-cor-um font-medium px-4" href="#">Recursos</a>
-                    <a class="text-cor-um font-medium px-4" href="#">Sobre nós</a>
+                    <a class="text-cor-um font-medium px-4 duration-300 hover:text-cor-hover_2" href="#">Home</a>
+                    <a class="text-cor-um font-medium px-4 duration-300 hover:text-cor-hover_2" href="#">Produtos</a>
+                    <a class="text-cor-um font-medium px-4 duration-300 hover:text-cor-hover_2" href="#">Recursos</a>
+                    <a class="text-cor-um font-medium px-4 duration-300 hover:text-cor-hover_2" href="#">Sobre nós</a>
                 </div>
             </div>
-            <div class="flex items-center">
-                <a class="text-cor-um font-fonte font-medium py-2.5 px-4" href="#">Entrar</a>
-                <a class="text-cor-quatro font-fonte font-medium py-2.5 px-4 bg-cor-tres rounded-lg"
+            <div class="flex items-center gap-3">
+                <a class="text-cor-um font-fonte font-medium py-2.5 px-4 duration-300 hover:text-cor-hover_2" href="#">Entrar</a>
+                <a class="text-cor-quatro font-fonte font-medium py-2.5 px-4 bg-cor-tres rounded-lg duration-300 hover:bg-cor-hover_1"
                     href="#">Cadastrar</a>
             </div>
         </nav>
@@ -65,7 +67,7 @@
     </header>
 
     <main class="flex flex-col items-center">
-        <section class="flex gap-x-8 justify-center mb-24 w-5/6">
+        <section class="flex gap-x-8 justify-center mb-48 w-5/6">
             <div class="w-72">
                 <h2 class="text-6xl font-semibold text-cor-tres">400+</h2>
                 <h3 class="text-cor-dois text-lg font-medium">Projetos concluídos</h3>
@@ -74,20 +76,101 @@
             <div class="w-72">
                 <h2 class="text-6xl font-semibold text-cor-tres">100+</h2>
                 <h3 class="text-cor-dois text-lg font-medium">Colaboradores</h3>
-                <p class="text-cor-um font-normal">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+                <p class="text-cor-um font-normal">Temos mais de 100 colaboradores no nosso time que se preocupam com
+                    nossos clientes.</p>
             </div>
             <div class="w-72">
                 <h2 class="text-6xl font-semibold text-cor-tres">20k</h2>
                 <h3 class="text-cor-dois text-lg font-medium">Downloads</h3>
-                <p class="text-cor-um font-normal">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+                <p class="text-cor-um font-normal">Nossos projetos que estão disponíveis em lojas já foram baixados mais
+                    de 20.000 vezes.</p>
             </div>
             <div class="w-72">
                 <h2 class="text-6xl font-semibold text-cor-tres">500+</h2>
                 <h3 class="text-cor-dois text-lg font-medium">Reviews 5 estrelas</h3>
-                <p class="text-cor-um font-normal">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+                <p class="text-cor-um font-normal">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em
+                    nossos produtos.</p>
             </div>
         </section>
+
+        <section class="w-5/6">
+            <div class="mb-16">
+                <h2 class="text-sm text-cor-tres font-medium text-center">Vagas abertas</h2>
+                <h3 class="mt-4 mb-5 text-center text-4xl text-cor-dois font-semibold">Estamos procurando por talentos
+                </h3>
+                <p class="text-normal text-center text-cor-um text-xl">Somos uma equipe 100% remota com pessoas do
+                    Brasil inteiro</p>
+            </div>
+            <img class="mb-16 w-full" src="img/Image.svg" alt="imagem de uma entrevista">
+        </section>
+
+        <section class="w-5/6 mb-40">
+            <div class="flex flex-col gap-6 py-6 pl-56">
+                <h4 class="text-xl font-medium text-cor-dois">Design</h4>
+                <div class="p-6">
+                    <h5 class="text-lg font-medium text-cor-dois mb-8">Product Designer</h5>
+                    <div class="flex gap-x-6">
+                        <p class="text-base text-cor-um font-medium">Full-time</p>
+                        <p class="text-base text-cor-um font-medium">Faixa salarial: R$7.000</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h5 class="text-lg font-medium text-cor-dois mb-8">UX Designer</h5>
+                    <div class="flex gap-x-6">
+                        <p class="text-base text-cor-um font-medium">Full-time</p>
+                        <p class="text-base text-cor-um font-medium">Faixa salarial: R$6.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6 py-6 pl-56">
+                <h4 class="text-xl font-medium text-cor-dois">Desenvolvimento de Software</h4>
+                <div class="p-6">
+                    <h5 class="text-lg font-medium text-cor-dois mb-8">Desenvolvedor(a) IOS</h5>
+                    <div class="flex gap-x-6">
+                        <p class="text-base text-cor-um font-medium">Full-time</p>
+                        <p class="text-base text-cor-um font-medium">Faixa salarial: R$8.000</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h5 class="text-lg font-medium text-cor-dois mb-8">Desenvolvedor(a) Front-end</h5>
+                    <div class="flex gap-x-6">
+                        <p class="text-base text-cor-um font-medium">Full-time</p>
+                        <p class="text-base text-cor-um font-medium">Faixa salarial: R$7.000</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h5 class="text-lg font-medium text-cor-dois mb-8">Desenvolvedor(a) Back-end</h5>
+                    <div class="flex gap-x-6">
+                        <p class="text-base text-cor-um font-medium">Full-time</p>
+                        <p class="text-base text-cor-um font-medium">Faixa salarial: R$8.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-64 w-5/6">
+            <h2 class="font-semibold text-sm text-cor-tres text-center mb-4">Veja o que nossos colaboradores falam sobre nós</h2>
+            <h3 class="font-medium text-4xl text-center text-cor-dois">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h3>
+            <div class="mt-8 mb-16 flex flex-col items-center">
+                <img class="w-14 h-14 mb-4" src="./img/Avatar.svg" alt="foto de um colaborador">
+                <h3 class="text-cor-dois font-medium text-base text-center mb-1">Júlia Castro</h3>
+                <p class="text-normal text-center text-cor-um text-sm">Desenvolvedora Web</p>
+            </div>
+        </section>
+
+        <section class="w-5/6s">
+            <h2 class="font-semibold text-cor-dois text-center text-4xl mb-5">Acompanhe as nossas oportunidades</h2>
+            <p class="text-center font-normal text-cor-um text-lg">Seja o primeiro a saber quando novas vagas serão abertas</p>
+            <form class="flex mt-10 gap-4 justify-center">
+                <input class="w-80 pl-4 py-3 border-2 border-[#D0D5DD] rounded-lg placeholder:text-cor-um placeholder:text-normal focus:outline-none" type="text" placeholder="Seu e-mail">
+                <input class="text-cor-quatro font-fonte font-medium py-2.5 px-4 bg-cor-tres rounded-lg duration-300 hover:bg-cor-hover_1" type="submit" value="Cadastrar">
+            </form>
+        </section>
     </main>
+
+    <footer class="flex justify-center mt-8 mb-2">
+        <strong class="w-5/6 font-normal text-base text-center text-[#98A2B3]">© 2022 OptimusTech. Todos os direitos reservados.</strong>
+    </footer>
 </body>
 
 </html>
