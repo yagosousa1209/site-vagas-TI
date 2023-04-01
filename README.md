@@ -1,5 +1,7 @@
 # site-vagas-TI
 
+- OptimusTech
 - 7 days of code - Alura
-- Dia 1 - Header
-- Iniciado em 26/03/2023
+- Não responsivo
+- Finalizado em 01/04/2023
+- Usado HTML e Tailwind
